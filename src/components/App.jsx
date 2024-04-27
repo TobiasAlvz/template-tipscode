@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "./Form";
 import "../style.css";
 
 function App() {
