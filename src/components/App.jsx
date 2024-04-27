@@ -5,11 +5,7 @@ import '../style.css';
 let isLoggeIn = false;
 
 function renderConditionally () {
-  if (isLoggeIn === true) {
-    return <h1>Bem-Vindo</h1>;
-  } else {
-    return <Form />;
-  }
+  return isLoggeIn === true ? <h1>Bem-Vindo</h1> : <Form />;
 }
 
 function App () {
