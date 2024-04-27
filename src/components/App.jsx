@@ -2,13 +2,13 @@ import React from 'react';
 import Form from './Form';
 import '../style.css';
 
-let isLoggeIn = true;
+let isLoggeIn = false;
 
 function renderConditionally () {
   if (isLoggeIn === true) {
     return <h1>Bem-Vindo</h1>;
   } else {
-    <Form />;
+    return <Form />;
   }
 }
 
