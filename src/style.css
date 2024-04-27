@@ -1,3 +1,4 @@
+/* Reset de Estilos */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,51 +6,60 @@
   font-weight: 300;
 }
 
+/* Estilos Globais */
 body {
   font-family: "Source Sans Pro", sans-serif;
-  color: white;
+  color: #333;
   background-color: #7a90fe;
   width: 100%;
   height: 100%;
 }
 
+/* Container */
 .container {
-  margin: 10%, auto;
-  padding: 80px 0;
+  margin: 10% auto;
+  padding: 80px 20px;
   text-align: center;
 }
 
 .container h1 {
   font-size: 40px;
-  font-weight: 200px;
+  font-weight: 300;
   padding: 20px;
 }
 
+/* Formulário */
 .form {
   padding: 20px 0;
-  position: relative;
 }
 
 .form input {
-  border: 1px solid rgb(252, 252, 252, 0.4);
-  background-color: rgb(252, 252, 252, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
   width: 250px;
   border-radius: 3px;
   font-family: "Source Sans Pro", sans-serif;
   padding: 10px 15px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 20px auto;
   display: block;
   text-align: center;
   font-size: 18px;
-  color: #fff;
-  font-weight: 3000;
+  color: #333;
+  font-weight: 300;
 }
 
 .form button {
   color: #fff;
+  background-color: #50a3a2;
   border: 0;
-  padding: 10px 10px;
-  color: #50a3a2;
+  padding: 12px 20px;
   width: 250px;
   font-size: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #3a7f7e;
 }
