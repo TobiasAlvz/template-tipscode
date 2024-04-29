@@ -2,16 +2,12 @@ import React from 'react';
 import Form from './Form';
 import '../style.css';
 
-let isLoggeIn = false;
-
-function renderConditionally () {
-  return isLoggeIn === true ? <h1>Bem-Vindo</h1> : <Form />;
-}
-
 function App () {
+  const isLoggedIn = false;
+
   return (
     <div className="container">
-      {renderConditionally ()}
+      <Form isLoggedIn={isLoggedIn} />
     </div>
   );
 }
