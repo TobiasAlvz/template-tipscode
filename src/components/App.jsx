@@ -7,7 +7,7 @@ function App () {
 
   return (
     <div className="container">
-      <Form isLoggedIn={userRegister} />
+      <Form userRegister={userRegister} />
     </div>
   );
 }
