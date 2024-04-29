@@ -5,8 +5,9 @@ function Form({isLoggedIn}) {
   return (
     <div>
       <h1>Forms</h1>
-      <Login showConfirmPasswordInput={!isLoggedIn} />
+      <Login isLoggedIn={isLoggedIn} />
     </div>
   );
 }
+
 export default Form;
