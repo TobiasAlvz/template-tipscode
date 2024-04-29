@@ -9,7 +9,7 @@ function Login({ isLoggedIn }) {
       {!isLoggedIn && (
         <Input type="password" placeholder="Confirme sua senha" />
       )}
-      <button type="submit">Login</button>
+      <button type="submit">{isLoggedIn ? "Login" : "Register"}</button>
     </form>
   );
 }
