@@ -1,6 +1,11 @@
 import React from 'react';
 import Login from './Login';
 
+function renderConditionally () {
+  return isLoggeIn === true ? <h1>Bem-Vindo</h1> : <Form />;
+}
+
+
 function Form () {
   return (
     <div>
