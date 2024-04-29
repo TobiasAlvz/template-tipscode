@@ -3,7 +3,7 @@ import Form from './Form';
 import '../style.css';
 
 function App () {
-  const isLoggedIn = false;
+  const isLoggedIn = true;
 
   return (
     <div className="container">
