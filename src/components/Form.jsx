@@ -1,11 +1,11 @@
 import React from 'react';
 import Login from './Login';
 
-function Form({isLoggedIn}) {
+function Form({userRegister}) {
   return (
     <div>
       <h1>Forms</h1>
-      <Login isLoggedIn={isLoggedIn} />
+      <Login userRegister={userRegister} />
     </div>
   );
 }
