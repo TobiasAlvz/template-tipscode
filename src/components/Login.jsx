@@ -1,15 +1,14 @@
 import React from 'react';
 import Input from './Input';
 
-function Login({ isLoggedIn }) {
+function Login({userRegister}) {
   return (
     <form className="form">
       <Input type="text" placeholder="Digite seu nome" />
       <Input type="password" placeholder="Senha" />
-      {!isLoggedIn && (
-        <Input type="password" placeholder="Confirme sua senha" />
-      )}
-      <button type="submit">{isLoggedIn ? "Login" : "Register"}</button>
+      {!userRegister &&
+        <Input type="password" placeholder="Confirme sua senha" />}
+      <button type="submit">{userRegister ? 'Login' : 'Register'}</button>
     </form>
   );
 }
