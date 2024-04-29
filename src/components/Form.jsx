@@ -1,18 +1,12 @@
 import React from 'react';
 import Login from './Login';
 
-function renderConditionally () {
-  return isLoggeIn === true ? <h1>Bem-Vindo</h1> : <Form />;
-}
-
-
-function Form () {
+function Form({isLoggedIn}) {
   return (
     <div>
       <h1>Forms</h1>
-      <Login />
+      <Login showConfirmPasswordInput={!isLoggedIn} />
     </div>
   );
 }
-
 export default Form;
